@@ -2,10 +2,19 @@
 	box-sizing: border-box;
 }
 
-html, body {
+body {
 	width: 100%;
-	background: linear-gradient(red, white);
+	height: 100%;
+	background: url('../images/wallpaper 03.jpg') center center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 	padding: 20px;
+	font-family: "Rokkitt", Arial, sans-serif;
+}
+
+.headings {
+	color: #fff;
+	text-shadow: 0 0 20px #000;
 }
 
 input[type=text] {
@@ -19,17 +28,37 @@ input[type=text] {
 	text-align: center;
 }
 
-.timer {
-	width: 500px;
+.btn-default {
+	font-size: 20px;
+	font-weight: 900;
 }
 
-.time {
+#timer {
+	width: 700px;
+}
+
+#time {
 	font-size: 10em;
+}
+
+#round-display {
+	display: none;
+	font-size: 3em;	
+}
+
+#msg-blank, #msg-invalid, #session-zero, #round-zero {
+	display: none;
+	width: 500px;
+	margin: 0 auto 20px;
 }
 
 .btn-div {
 	display: inline-block;
 	margin: 0 50px;
+}
+
+#back-btn-div {
+	display: none;
 }
 
 @media only screen and (max-width: 625px) {
@@ -39,11 +68,11 @@ input[type=text] {
 }
 
 @media only screen and (max-width: 600px) {
-	.timer {
+	#timer {
 		width: 400px;
 	}
 
-	.time {
+	#time {
 		font-size: 6em;
 	}
 
@@ -53,11 +82,11 @@ input[type=text] {
 }
 
 @media only screen and (max-width: 440px) {
-	.timer {
+	#timer {
 		width: 350px;
 	}
 
-	.time {
+	#time {
 		font-size: 5em;
 	}
 
@@ -67,11 +96,11 @@ input[type=text] {
 }
 
 @media only screen and (max-width: 400px) {
-	.timer {
+	#timer {
 		width: 300px;
 	}
 
-	.time {
+	#time {
 		font-size: 4em;
 	}
 
