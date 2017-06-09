@@ -1,7 +1,3 @@
-* {
-	box-sizing: border-box;
-}
-
 body {
 	width: 100%;
 	height: 100%;
@@ -18,13 +14,13 @@ body {
 }
 
 input[type=text] {
-	margin-left: 15px;
-	margin-right: 15px;
+	margin-left: 5px;
+	margin-right: 5px;
 	border-radius: 5px;
-	padding: 20px;
+	padding: 20px 10px;
 	height: 30px;
-	width: 100px;
-	font-size: 20px;
+	width: 80px;
+	font-size: 25px;
 	text-align: center;
 }
 
@@ -61,6 +57,35 @@ input[type=text] {
 	display: none;
 }
 
+#back-btn {
+	font-size: 1.2em;
+}
+
+@media only screen and (max-width: 900px) {
+	h3.headings {
+		width: 150px;
+		margin: 0 auto;
+	}
+
+	h3.round-label {
+		margin: 0 auto;
+		width: 100px;
+	}
+}
+
+@media only screen and (max-width: 780px) {
+	.session-div, .break-div {
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 680px) {
+	#timer {
+		width: 600px;
+		margin: 0 auto;
+	}
+}
+
 @media only screen and (max-width: 625px) {
 	.btn-div {
 		margin: 0 35px;
@@ -76,8 +101,16 @@ input[type=text] {
 		font-size: 6em;
 	}
 
+	.alert {
+		width: 100% !important;
+	}
+
 	.btn-div {
 		margin: 0 20px;
+	}
+
+	.btn-success, .btn-danger {
+		font-size: 15px;
 	}
 }
 
@@ -93,6 +126,10 @@ input[type=text] {
 	.btn-div {
 		margin: 0 15px;
 	}
+
+	.btn-success, .btn-danger {
+		font-size: 13px;
+	}
 }
 
 @media only screen and (max-width: 400px) {
@@ -107,10 +144,47 @@ input[type=text] {
 	.btn-div {
 		margin: 0 10px;
 	}
+
+	.btn-success, .btn-danger {
+		font-size: 12px;
+	}
 }
 
 @media only screen and (max-width: 380px) {
+	#timer {
+		width: 100%;
+	}
+
+	.btn-success, .btn-danger {
+		font-size: 11px;
+	}
+
 	.btn-div {
 		margin: 0 3px;
-	}	
+	}
+	
+}
+
+@media only screen and (max-width: 300px) {
+	#timer {
+		width: 100%;
+		margin: 0;
+	}
+
+	#time {
+		font-size: 3em;
+	}
+
+	#round-display {
+		font-size: 2em;
+	}
+
+	.btn-success, .btn-danger {
+		font-size: 10px;
+	}
+
+	.btn-div {
+		margin: 0 3px;
+	}
+	
 }

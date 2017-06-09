@@ -77,6 +77,10 @@ startBtn.addEventListener('click', function() {
   }
 }, false);
 
+stopBtn.addEventListener('click', function() {
+  clearFields();
+});
+
 backBtn.addEventListener('click', function() {
   timerDisplay.style.display = "block";
   controlBtns.style.display = "block";

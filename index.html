@@ -12,17 +12,17 @@
   <body>
        <h1 class="text-center headings">Pomodoro (Tomato) Timer</h1><br><br><br>
 
-       <div id="inputs" class="container text-center">
+       <div id="inputs" class="container-fluid text-center">
          <div class="row">
 
-           <div class="col-sm-4 col-md-4">
+           <div class="col-sm-4 col-md-4 session-div">
               <h3 class="headings">Session Length (seconds)</h3>
               <button id="session-minus" class="btn btn-default">-</button>
               <input id="session" type="text">
               <button id="session-plus" class="btn btn-default">+</button>
            </div>
 
-           <div class="col-sm-4 col-md-4">
+           <div class="col-sm-4 col-md-4 break-div">
               <h3 class="headings">Break Length (seconds)</h3>
               <button id="break-minus" class="btn btn-default">-</button>
               <input id="rest" type="text">
@@ -30,11 +30,12 @@
            </div>
 
            <div class="col-sm-4 col-md-4">
-              <h3 class="headings">Rounds</h3>
+              <h3 class="headings round-label">No. of Rounds</h3>
               <button id="round-minus" class="btn btn-default">-</button>
               <input id="round" type="text">
               <button id="round-plus" class="btn btn-default">+</button>
            </div>
+
          </div>
        </div><br><br><br>
 
@@ -72,7 +73,7 @@
        </div>
 
        <div id="back-btn-div" class="text-center">
-         <button id="back-btn" class="btn btn-lg btn-danger">Back</button>
+         <button id="back-btn" class="btn btn-lg btn-danger">BACK</button>
        </div>
 
     <audio id="clock-tick" src="sounds/Clock Ticking.mp3"></audio>
